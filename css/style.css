@@ -464,6 +464,8 @@ footer h3{
     }
 
     footer .center ul{
+        position: relative;
+        left: -20px;
         float: none;
         display: inline-block;
     }
@@ -473,6 +475,8 @@ footer h3{
     }
 
     footer .center h3{
+        position: relative;
+        left: 50px;
         float: none;
         display: inline-block;
     }
@@ -484,4 +488,3 @@ footer h3{
         text-decoration: underline;
     }
 }
-
