@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    height: 130px;
+    border-bottom: 3px solid royalblue;
+}
+
+header .center{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+header a img{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+header .menu{
+    display: none;
+}
+
+header ul{
+    float: right;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+header ul li{
+    float: left;
+    font-size: 23px;
+    font-style: italic;
+    margin-left: 60px;
+    list-style-type: none;
+}
+
+header ul li:nth-of-type(2){
+    color: royalblue;
+}
+
+header ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.sell{
+    padding: 90px 2%;
+}
+
+.sell .center, .sell .center-2, .sell .center-3{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.sell .center, .sell .center-3{
+    max-width: 1440px;
+}
+
+.sell .line-1{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 20px;
+    background: black;
+}
+
+.sell .center h1{
+    position: relative;
+    background: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.sell .center-2{
+    max-width: 400px;
+}
+
+.filters{
+    padding-top: 50px;
+}
+
+.filter-by-price h2, .filter-by-year h2{
+    font-weight: normal;
+}
+
+.filter-by-price .price-bar{
+    margin-top: 5px;
+    height: 20px;
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #b0b0b0, #ffffff);
+}
+
+.price-values{
+    margin-top: 5px;
+}
+
+.minimum-value, .maximum-value{
+    display: inline-block;
+}
+
+.minimum-value{
+    float: left;
+}
+
+.maximum-value{
+    float: right;
+}
+
+.filter-by-year{
+    margin-top: 60px;
+}
+
+.filter-by-year form{
+    margin-top: 10px;
+}
+
+.filter-by-year form input, .filter-by-year form label{
+    display: inline-block;
+}
+
+.display-cars{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.item-car{
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+}
+
+.item-car img{
+    width: 100%;
+}
+
+.item-car h3{
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.item-car p{
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.item-car input[type=button]{
+    margin-top: 10px;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+    background-color: royalblue;
+    border: none;
+}
+
+footer{
+    background-color: #303030;
+    height: 100px;
+}
+
+footer .center{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+footer ul, footer h3{
+    margin-top: 40px;
+}
+
+footer ul{
+    float: left;
+}
+
+footer li{
+    float: left;
+    list-style-type: none;
+    margin-right: 50px;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+
+footer li:nth-of-type(2){
+    color: royalblue;
+}
+
+footer h3{
+    float: right;
+    font-style: italic;
+    color: white;
+}
+
+@media screen and (max-width: 1500px){
+    footer{
+        height: auto;
+    }
+
+    footer .center{
+        text-align: center;
+    }
+
+    footer .center ul{
+        margin-left: 100px;
+        float: none;
+        display: inline-block;
+    }
+
+    footer .center ul{
+        margin-right: 0;
+    }
+
+    footer .center h3{
+        margin-right: 100px;
+        float: none;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header ul{
+        display: none;
+    }
+
+    header .menu{
+        display: initial;
+        float: right;
+        width: 32px;
+        height: 32px;
+        margin-top: 50px;
+        margin-right: 30px;
+    }
+
+    .item-car{
+        display: block;
+        width: 100%;
+    }
+
+    .item-car:not(:last-child){
+        margin-bottom: 50px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    footer .center{
+        text-align: center;
+    }
+
+    footer .center ul{
+        position: relative;
+        left: -20px;
+        float: none;
+        display: inline-block;
+    }
+
+    footer .center ul{
+        margin-right: 0;
+    }
+
+    footer .center h3{
+        position: relative;
+        left: 50px;
+        float: none;
+        display: inline-block;
+    }
+}
